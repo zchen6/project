@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 20px;
+        }
+        div {
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+<body>
+    <h1>Contact/Feedback</h1>
+        <ul id="navigation">
+            <li><a href="index.html">Homepage</a></li>
+            <br>
+            <li>Five Tastes:</li>
+            <li>Sour（酸）</li>
+            <li>Sweet（甜）</li>
+            <li>Bitter（苦）</li>
+            <li>Spicy（辣）</li>
+            <li>Salty（咸）</li>
+            <br>
+            <li>Four Dishes:</li>
+            <li><a href="dish1.html">Dim Sum</a></li>
+            <li><a href="dish2.html">Ma Po Tofu</a></li>
+            <li><a href="dish3.html">Peking Duck</a></li>
+            <li><a href="dish4.html">Dumplings</a></li>
+            <br>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+        <form method="POST" action="mailto:zchen6@babson.edu">
+            <fieldset>
+              <legend>Your Information:</legend>
+              <br />
+              <div>
+                <label for="name">Name:</label>
+                &emsp;
+                <input type="text" id="name" placeholder="Enter your name here" />
+              </div>
+              <pre></pre>
+              <div>
+                <label for="email">Email:</label>
+                &emsp;
+                <input type="text" id="email" placeholder="Enter your email here" />
+              </div>
+            </fieldset>
+            <br />
+            <fieldset>
+              <legend>Your Review:</legend>
+              <br />
+              <div>
+                <label for="dish-select"
+                  >Which dish do you like the most?</label
+                >
+                <select name="dish-name" id="dish-select">
+                  <option value="dim-sum">Dim Sum</option>
+                  <option value="mapo-tofu">
+                    Ma Po Tofu
+                  </option>
+                  <option value="peking-duck">Peking Duck</option>
+                  <option value="dumplings">Dumplings</option>
+                </select>
+              </div>
+              <div>What do you think of this dish?</div>
+              <div>
+                <label><input type="radio" value="rate" />Great</label>
+                <label><input type="radio" value="rate" />Awesome</label>
+                <label><input type="radio" value="rate" />Good</label>
+              </div>
+              <div>
+                <label for="comments">Comments:</label>
+              </div>
+              <div>
+                <textarea name="comments" id="comments" cols="50" rows="5" placeholder="Enter your comment and feedback here" ></textarea>
+              </div>
+              <div>
+                <label
+                  ><input type="checkbox" checked /> Sign me up for email
+                  updates</label
+                >
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </div>
+            </fieldset>
+          </form>
