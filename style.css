@@ -1,0 +1,46 @@
+body{
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+    background-blend-mode: lighten;
+    margin: 30px;
+    text-align: center;
+    
+}
+h1{
+    font-size: 35pt;
+    text-align:inherit;
+}
+.nav{
+    font-weight: bold;
+    font-size: 20pt;
+}
+ul#navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    font-size: 15pt;
+    color: black;
+}
+#navigation li a{
+    text-decoration: none;
+    color:coral;
+}
+#navigation li a:hover{
+    text-decoration: double;
+    color: pink;
+}
+table{
+    margin-left: 400px;
+    margin-right: 50px;
+    font-size: 20pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+table,td{
+    border: 2px solid black;
+    border-radius: 2;
+}

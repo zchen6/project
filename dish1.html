@@ -5,38 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dimsum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" sizes="16*16" href="favicon.ico" type="image/x-icon">
+    <style>
+      #pic {
+        width: 500px;
+        height: 350px;
+      }
+      table{
+        padding: 10px;
+        margin-left: 400px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Zihou's Website</h1>
+    <h1><img src="favicon.ico" alt="favicon">Welcome to Zihou's Website</h1>
     <ul id="navigation">
-      <li><a href="index.html">Homepage</a></li>
+      <li class="nav"><a href="index.html">Homepage</a></li>
       <br />
-      <li>Five Tastes:</li>
       <li>Sour（酸）</li>
       <li>Sweet（甜）</li>
       <li>Bitter（苦）</li>
       <li>Spicy（辣）</li>
       <li>Salty（咸）</li>
       <br />
-      <li>Four Dishes:</li>
-      <li><a href="dish1.html">Dim Sum</a></li>
-      <li><a href="dish2.html">Ma Po Tofu</a></li>
-      <li><a href="dish3.html">Peking Duck</a></li>
-      <li><a href="dish4.html">Dumplings</a></li>
+      <li class="nav">Four Dishes:</li>
+      <br>
+      <li><a href="dish1.html">Dim Sum (点心)</a></li>
+      <li><a href="dish2.html">Ma Po Tofu (麻婆豆腐)</a></li>
+      <li><a href="dish3.html">Peking Duck (北京烤鸭)</a></li>
+      <li><a href="dish4.html">Dumplings (饺子)</a></li>
       <br />
-      <li><a href="sitemap.html">Sitemap</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
+      <li class="nav"><a href="sitemap.html">Sitemap</a></li>
+      <br>
+      <li class="nav"><a href="contact.html">Contact Me</a></li>
     </ul>
     <table>
-      <td>
-        <img src="images/dimsum.jpg" alt="dimsum" title="dimsum" height="200" />
-      </td>
+    <tr>
       <td>Dim Sum（点心）</td>
+    </tr>
+    <tr>
+      <td>
+        <img id="pic" src="images/dimsum.jpg" alt="dimsum" title="dimsum" height="200" />
+      </td>
+    </tr>
+    <tr>
       <td>
           Dim Sum is a large range of small dishes that people enjoy in restaurants for breakfast and lunch in Guangdong, China.
           People in Guangzhou enjoy Dim Sum with tea, so they call it yum cha (drink tea) when they go to have Dim Sum.
           Dim Sum (点心) in English means "touching heart", the term used to designate the small dishes that accompanied the tea drinking.
       </td>
+    </tr>
     </table>
   </body>
 </html>

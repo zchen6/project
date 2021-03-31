@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chinese Food Culture and Chinese dishes">
+    <meta name="keywords" content="chinese,food,dim-sum,dishes">
+    <meta name="author" content="Zihou">
     <title>Homepage</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -19,40 +22,69 @@
 
       gtag("config", "G-SLXMNC37G9");
     </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" sizes="16*16" href="favicon.ico" type="image/x-icon">
+    <style>
+      .main {
+        padding: 30px;
+        margin-left: 400px;
+        border: 2px solid red;
+        border-style: groove;
+        font-size: 18pt;
+        text-align: center;
+        float: center;
+      }
+      ul#story{
+        margin-right: 50 px;
+        list-style-type: none;
+      }
+      #ch{
+        font-size: 30pt;
+        font-weight: bold;
+        color: red;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Zihou's Website</h1>
+    <h1> <img src="favicon.ico" alt=""> Welcome to Zihou's Website</h1>
     <ul id="navigation">
-      <li><a href="index.html">Homepage</a></li>
+      <li class="nav"><a href="index.html">Homepage</a></li>
       <br />
-      <li>Five Tastes:</li>
       <li>Sour（酸）</li>
       <li>Sweet（甜）</li>
       <li>Bitter（苦）</li>
       <li>Spicy（辣）</li>
       <li>Salty（咸）</li>
       <br />
-      <li>Four Dishes:</li>
-      <li><a href="dish1.html">Dim Sum</a></li>
-      <li><a href="dish2.html">Ma Po Tofu</a></li>
-      <li><a href="dish3.html">Peking Duck</a></li>
-      <li><a href="dish4.html">Dumplings</a></li>
+      <li class="nav">Four Dishes:</li>
+      <br>
+      <li><a href="dish1.html">Dim Sum (点心)</a></li>
+      <li><a href="dish2.html">Ma Po Tofu (麻婆豆腐)</a></li>
+      <li><a href="dish3.html">Peking Duck (北京烤鸭)</a></li>
+      <li><a href="dish4.html">Dumplings (饺子)</a></li>
       <br />
-      <li><a href="sitemap.html">Sitemap</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
+      <li class="nav"><a href="sitemap.html">Sitemap</a></li>
+      <br>
+      <li class="nav"><a href="contact.html">Contact Me</a></li>
     </ul>
-    <div>
-      <p>
+    <div class="main">
+      <p id="ch">Chinese Food Culture</p>
+      <div><img src="images/food-culutre.jpg" alt="food-culutre"></div>
+      <ul id="story">
+        <li>
         This website covers 4 different Chinese dishes, with the information of
-        its history and recipe.
-      </p>
-      <p>
+        its history.
+      </li>
+      <br>
+      <li>
         The objective of this website is to revel the history and cultural
         background behind these 4 Chinese dishes. Chinese food is one of the
         most famous and popular food in the world. It is fun to discover the fun
         fact about Chinese food.
-      </p>
-      <p>This website is great for anyone who is interested in Chinese food.</p>
+      </li>
+      <br>
+      <li>This website is great for anyone who is interested in Chinese food.</li> 
+    </ul>
     </div>
   </body>
 </html>

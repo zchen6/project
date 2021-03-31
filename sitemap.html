@@ -5,45 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sitepmap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" sizes="16*16" href="favicon.ico" type="image/x-icon">
+    <style>
+        table{
+        padding: 10px;
+        margin-left: 350px;
+      }
+      div,a{
+          text-decoration: none;
+      }
+      a:hover.btn{
+        text-decoration: double;
+    color: pink;
+      }
+      a.btn{
+          border: 1px solid black;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 15pt;
+          font-weight: bold;
+          color:peru ;
+          margin-top: 70px;
+      }
+      .cod{
+          font-size: 12pt;
+          text-align: center;
+          padding: 30;
+          margin-left: 30px;
+          color: red;
+      }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Zihou's Website</h1>
+    <h1><img src="favicon.ico" alt="favicon">Welcome to Zihou's Website</h1>
     <p>
         <ul id="navigation">
-            <li><a href="index.html">Homepage</a></li>
+            <li class="nav"><a href="index.html">Homepage</a></li>
             <br>
-            <li>Five Tastes:</li>
             <li>Sour（酸）</li>
-            <li>Sweet（甜）</li>
-            <li>Bitter（苦）</li>
-            <li>Spicy（辣）</li>
-            <li>Salty（咸）</li>
-            <br>
-            <li>Four Dishes:</li>
-            <li><a href="dish1.html">Dim Sum</a></li>
-            <li><a href="dish2.html">Ma Po Tofu</a></li>
-            <li><a href="dish3.html">Peking Duck</a></li>
-            <li><a href="dish4.html">Dumplings</a></li>
-            <br>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+      <li>Sweet（甜）</li>
+      <li>Bitter（苦）</li>
+      <li>Spicy（辣）</li>
+      <li>Salty（咸）</li>
+      <br />
+      <li class="nav">Four Dishes:</li>
+      <br>
+      <li><a href="dish1.html">Dim Sum (点心)</a></li>
+      <li><a href="dish2.html">Ma Po Tofu (麻婆豆腐)</a></li>
+      <li><a href="dish3.html">Peking Duck (北京烤鸭)</a></li>
+      <li><a href="dish4.html">Dumplings (饺子)</a></li>
+      <br />
+      <li class="nav"><a href="sitemap.html">Sitemap</a></li>
+      <br>
+      <li class="nav"><a href="contact.html">Contact Me</a></li>
+    </ul>
         <table>
             <tr>
-                <td colspan="2"><img src="images/dimsum.jpg" alt="dimsum" title="dimsum" width="300" height="125"></td>
-                <td rowspan="2"><img src="images/mapo-tofu.jpg" alt="mapo-tofu" title="mapo-tofu" height="250"></td>
+                <td colspan="2"><img src="images/dimsum.jpg" alt="dimsum" title="dimsum" width="400px" height="250px"></td>
+                <td rowspan="2"><img src="images/dumplings.jpg" alt="dumplings" title="dumplings" height="500px" width="350px"></td>
             </tr>
             <tr>
-                <td><img src="images/peking-duck.jpg" alt="peking-duck" title="peking-duck" height="125"></td>
-                <td><img src="images/dumplings.jpg" alt="dumplings" title="dumplings" height="125" width="100"></td>
+                <td><img src="images/peking-duck.jpg" alt="peking-duck" title="peking-duck" height="300px" width="400px"></td>
+                <td><img src="images/mapo-tofu.jpg" alt="mapo-tofu" title="mapo-tofu" height="300px" width="350px"></td>
             </tr>
         </table>
     </p>
-    <div>
-        <a href="dish1.html">Dim Sum</a>
-        <a href="dish2.html">Ma Po Tofu</a>
-        <a href="dish3.html">Peking Duck</a>
-        <a href="dish4.html">Dumplings</a>
+    <div class="btn" >
+        <a class="btn" href="dish1.html">Dim Sum</a>
+        <a class="btn" href="dish2.html">Ma Po Tofu</a>
+        <a class="btn" href="dish3.html">Peking Duck</a>
+        <a class="btn" href="dish4.html">Dumplings</a>
+    </div>
+    <br><br>
+    <div class="cod">
+        "All intellectual property at this website is in the public domain or is the property of the site-owner."
+    </div>
+    <br>
+    <div class="cod">
+        "I, Zihou Chen, pledge my honor that I have neither received nor provided unauthorized assistance during the completion of this work. I have read the term project instructions and observed all the restrictions and limitations specified therein."
     </div>
 </body>
 </html>

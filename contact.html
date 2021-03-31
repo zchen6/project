@@ -5,42 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" sizes="16*16" href="favicon.ico" type="image/x-icon">
     <style>
         form {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         padding: 20px;
+        font-size: 15pt;
         }
-        div {
+        form,div {
         margin-bottom: 10px;
+        font-size: 15pt;
+      }
+      .ti{
+        font-size: 20pt;
+        font-weight: bold;
+        color:brown;
       }
     </style>
 </head>
 <body>
-    <h1>Contact/Feedback</h1>
+    <h1><img src="favicon.ico" alt="favicon">Contact/Feedback</h1>
         <ul id="navigation">
-            <li><a href="index.html">Homepage</a></li>
+          <li class="nav"><a href="index.html">Homepage</a></li>
             <br>
-            <li>Five Tastes:</li>
             <li>Sour（酸）</li>
-            <li>Sweet（甜）</li>
-            <li>Bitter（苦）</li>
-            <li>Spicy（辣）</li>
-            <li>Salty（咸）</li>
-            <br>
-            <li>Four Dishes:</li>
-            <li><a href="dish1.html">Dim Sum</a></li>
-            <li><a href="dish2.html">Ma Po Tofu</a></li>
-            <li><a href="dish3.html">Peking Duck</a></li>
-            <li><a href="dish4.html">Dumplings</a></li>
-            <br>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+      <li>Sweet（甜）</li>
+      <li>Bitter（苦）</li>
+      <li>Spicy（辣）</li>
+      <li>Salty（咸）</li>
+      <br />
+      <li class="nav">Four Dishes:</li>
+      <br>
+      <li><a href="dish1.html">Dim Sum (点心)</a></li>
+      <li><a href="dish2.html">Ma Po Tofu (麻婆豆腐)</a></li>
+      <li><a href="dish3.html">Peking Duck (北京烤鸭)</a></li>
+      <li><a href="dish4.html">Dumplings (饺子)</a></li>
+      <br />
+      <li class="nav"><a href="sitemap.html">Sitemap</a></li>
+      <br>
+      <li class="nav"><a href="contact.html">Contact Me</a></li>
+    </ul>
         <form method="POST" action="mailto:zchen6@babson.edu">
             <fieldset>
-              <legend>Your Information:</legend>
+              <legend class="ti">Your Information:</legend>
               <br />
               <div>
                 <label for="name">Name:</label>
@@ -56,7 +66,7 @@
             </fieldset>
             <br />
             <fieldset>
-              <legend>Your Review:</legend>
+              <legend class="ti">Your Review:</legend>
               <br />
               <div>
                 <label for="dish-select"
