@@ -1,107 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" sizes="16*16" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      sizes="16*16"
+      href="favicon.ico"
+      type="image/x-icon"
+    />
     <style>
-        form {
+      form {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         padding: 20px;
         font-size: 15pt;
-        }
-        form,div {
+      }
+      form,
+      div {
         margin-bottom: 10px;
         font-size: 15pt;
       }
-      .ti{
+      .ti {
         font-size: 20pt;
         font-weight: bold;
-        color:brown;
+        color: brown;
       }
     </style>
-</head>
-<body>
-    <h1><img src="favicon.ico" alt="favicon">Contact/Feedback</h1>
-        <ul id="navigation">
-          <li class="nav"><a href="index.html">Homepage</a></li>
-            <br>
-            <li>Sour（酸）</li>
+  </head>
+  <body>
+    <h1><img src="favicon.ico" alt="favicon" />Contact/Feedback</h1>
+    <ul id="navigation">
+      <li class="nav"><a href="index.html">Homepage</a></li>
+      <br />
+      <li>Sour（酸）</li>
       <li>Sweet（甜）</li>
       <li>Bitter（苦）</li>
       <li>Spicy（辣）</li>
       <li>Salty（咸）</li>
       <br />
       <li class="nav">Four Dishes:</li>
-      <br>
+      <br />
       <li><a href="dish1.html">Dim Sum (点心)</a></li>
       <li><a href="dish2.html">Ma Po Tofu (麻婆豆腐)</a></li>
       <li><a href="dish3.html">Peking Duck (北京烤鸭)</a></li>
       <li><a href="dish4.html">Dumplings (饺子)</a></li>
       <br />
       <li class="nav"><a href="sitemap.html">Sitemap</a></li>
-      <br>
+      <br />
       <li class="nav"><a href="contact.html">Contact Me</a></li>
     </ul>
-        <form method="POST" action="mailto:zchen6@babson.edu">
-            <fieldset>
-              <legend class="ti">Your Information:</legend>
-              <br />
-              <div>
-                <label for="name">Name:</label>
-                &emsp;
-                <input type="text" id="name" placeholder="Enter your name here" />
-              </div>
-              <pre></pre>
-              <div>
-                <label for="email">Email:</label>
-                &emsp;
-                <input type="text" id="email" placeholder="Enter your email here" />
-              </div>
-            </fieldset>
-            <br />
-            <fieldset>
-              <legend class="ti">Your Review:</legend>
-              <br />
-              <div>
-                <label for="dish-select"
-                  >Which dish do you like the most?</label
-                >
-                <select name="dish-name" id="dish-select">
-                  <option value="dim-sum">Dim Sum</option>
-                  <option value="mapo-tofu">
-                    Ma Po Tofu
-                  </option>
-                  <option value="peking-duck">Peking Duck</option>
-                  <option value="dumplings">Dumplings</option>
-                </select>
-              </div>
-              <div>What do you think of this dish?</div>
-              <div>
-                <label><input type="radio" value="rate" />Great</label>
-                <label><input type="radio" value="rate" />Awesome</label>
-                <label><input type="radio" value="rate" />Good</label>
-              </div>
-              <div>
-                <label for="comments">Comments:</label>
-              </div>
-              <div>
-                <textarea name="comments" id="comments" cols="50" rows="5" placeholder="Enter your comment and feedback here" ></textarea>
-              </div>
-              <div>
-                <label
-                  ><input type="checkbox" checked /> Sign me up for email
-                  updates</label
-                >
-              </div>
-              <div>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-              </div>
-            </fieldset>
-          </form>
+    <form method="POST" action="mailto:zchen6@babson.edu">
+      <fieldset>
+        <legend class="ti">Your Information:</legend>
+        <br />
+        <div>
+          <label for="name">Name:</label>
+          &emsp;
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name here"
+            onblur="checkName()"
+            oninput="checkName()"
+          />
+          <span id="nameT">At least 2 letters</span>
+        </div>
+        <pre></pre>
+        <div>
+          <label for="email">Email:</label>
+          &emsp;
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter your email here"
+            onblur="checkEmail()"
+            oninput="checkEmail()"
+          />
+          <span id="emailT">full email address</span>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend class="ti">Your Review:</legend>
+        <br />
+        <div>
+          <label for="dish-select">Which dish do you like the most?</label>
+          <select name="dish-name" id="dish-select">
+            <option value="dim-sum">Dim Sum</option>
+            <option value="mapo-tofu">Ma Po Tofu</option>
+            <option value="peking-duck">Peking Duck</option>
+            <option value="dumplings">Dumplings</option>
+          </select>
+        </div>
+        <div>What do you think of this dish?</div>
+        <div>
+          <label><input type="radio" value="rate" />Great</label>
+          <label><input type="radio" value="rate" />Awesome</label>
+          <label><input type="radio" value="rate" />Good</label>
+        </div>
+        <div>
+          <label for="comments">Comments:</label>
+        </div>
+        <div>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="50"
+            rows="5"
+            placeholder="Enter your comment and feedback here"
+          ></textarea>
+        </div>
+        <div>
+          <label
+            ><input type="checkbox" checked /> Sign me up for email
+            updates</label
+          >
+        </div>
+        <div>
+          <button id="submit" type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+    <script>
+      function checkName() {
+        let username = document.getElementById("name").value;
+        if (username.length >= 2) {
+          nameT.innerHTML = "Work";
+          nameT.style.color = "green";
+          return true;
+        } else if (username.length == "") {
+          nameT.innerHTML = "Please fill in the blank";
+          nameT.style.color = "red";
+          document.getElementById("name").focus();
+          return false;
+        } else {
+          nameT.innerHTML = "Please enter at least 2 letters";
+          nameT.style.color = "red";
+          document.getElementById("name").focus();
+          return false;
+        }
+      }
+      function checkEmail() {
+        let reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        let email = document.getElementById("email").value;
+        if (reg.test(email)) {
+          emailT.innerHTML = "Work";
+          emailT.style.color = "green";
+        } else {
+          emailT.innerHTML = "Incorrect email format!";
+          emailT.style.color = "red";
+          document.getElementById("email").focus();
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
